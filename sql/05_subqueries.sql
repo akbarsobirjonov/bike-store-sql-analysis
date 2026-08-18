@@ -1,5 +1,14 @@
--- Task 11
-/*SELECT 
+/*
+============================================================
+Task 11: Products Above Average Price
+============================================================
+
+Business Question:
+Find all products whose price is above the average
+price of all products.
+============================================================
+*/
+SELECT 
 	P.PRODUCT_ID,
 	P.PRODUCT_NAME,
 	P.LIST_PRICE
@@ -8,10 +17,19 @@ WHERE P.LIST_PRICE > (
 	SELECT AVG(P.LIST_PRICE)
 	FROM PRODUCTS P
 )
-ORDER BY P.LIST_PRICE DESC*/
+ORDER BY P.LIST_PRICE DESC
 
--- Task 12
-/*SELECT 
+/*
+============================================================
+Task 12: Customers Above Average Order Count
+============================================================
+
+Business Question:
+Find customers whose number of orders is above the
+average number of orders among customers with orders.
+============================================================
+*/
+SELECT 
 	C.CUSTOMER_ID,
 	C.FIRST_NAME AS NAME,
 	C.LAST_NAME AS SURNAME,
@@ -30,10 +48,19 @@ HAVING COUNT(O.ORDER_ID) > (
     	GROUP BY CUSTOMER_ID
 	) AS T
 )
-ORDER BY ORDERS_COUNT  DESC */
+ORDER BY ORDERS_COUNT  DESC 
 
--- Task 13 
-/*SELECT 
+/*
+============================================================
+Task 13: Products Above Category Average
+============================================================
+
+Business Question:
+Find products whose price is above the average price
+within their own category.
+============================================================
+*/
+SELECT 
 	P.PRODUCT_ID,
 	P.PRODUCT_NAME,
 	P.LIST_PRICE,
@@ -45,4 +72,4 @@ WHERE P.LIST_PRICE > (
 	SELECT AVG(P2.LIST_PRICE)
 	FROM PRODUCTS P2 
 	WHERE P.CATEGORY_ID = P2.CATEGORY_ID 
-)*/
+)
