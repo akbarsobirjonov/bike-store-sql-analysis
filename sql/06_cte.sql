@@ -1,4 +1,7 @@
--- TASK 14
+-- ============================================
+-- Task 1 — Top Customers by Revenue
+-- Find customers whose total spending exceeds 50,000.
+-- ============================================
 WITH TEMP_CUSTOMER AS (
 	SELECT 
 		C.CUSTOMER_ID,
@@ -20,7 +23,11 @@ FROM TEMP_CUSTOMER TC
 WHERE TC.TOTAL_SPENT > 50000
 ORDER BY TC.TOTAL_SPENT DESC 
 
--- TASK 15
+-- ============================================
+-- Task 2 — Best-Selling Product in Each Category
+-- Find the best-selling product by quantity in each category.
+-- Include all products in case of a tie.
+-- ============================================
 WITH TEMP_CATEGORY AS (
 	SELECT 
 		C.CATEGORY_NAME,
@@ -50,7 +57,11 @@ ON TC.CATEGORY_NAME = MS.CATEGORY_NAME
 WHERE TC.TOTAL_QUANTITY_SOLD = MS.MAX_QUANTITY_SOLD
 ORDER BY TC.CATEGORY_NAME
 
--- TASK 16
+-- ============================================
+-- Task 3 — Stores Above Average Revenue
+-- Find stores whose revenue is above the average revenue
+-- across all stores and calculate the difference from average.
+-- ============================================
 WITH TEMP_STORES AS (
 	SELECT 
 		S.STORE_ID,
@@ -79,7 +90,11 @@ WHERE TS.TOTAL_REVENUE > AR.AVG_REVENUE
 ORDER BY TS.TOTAL_REVENUE DESC
 
 
--- TASK 17
+-- ============================================
+-- Task 4 — Customers With Increasing Activity
+-- Find customers with at least 2 orders whose latest order
+-- date is later than their first order date.
+-- ============================================
 WITH ORDERS_OF_CUSTOMER AS (
 	SELECT  
 		C.CUSTOMER_ID,
@@ -101,7 +116,12 @@ WHERE OC.ORDERS_COUNT >= 2
   AND OC.LAST_ORDER_DATE > OC.FIRST_ORDER_DATE
 ORDER BY OC.LAST_ORDER_DATE DESC
 
--- TASK 18
+-- ============================================
+-- Task 5 — Brand Performance Analysis
+-- Find brands whose revenue is above the average brand revenue.
+-- Calculate products sold, average revenue per sold item,
+-- and the difference from average brand revenue.
+-- ============================================
 WITH TEMP_BRAND AS (
 	SELECT 
 		B.BRAND_ID,
