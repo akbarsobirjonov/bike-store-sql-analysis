@@ -26,7 +26,7 @@ The project contains SQL queries designed to practice technical interview skills
 - ✅ JOINs
 - ✅ Advanced JOINs
 - ✅ Subqueries
-- ⏳ Common Table Expressions (CTE)
+- ✅ Common Table Expressions (CTE)
 - ⏳ Window Functions
 - ⏳ Business Cases
 
