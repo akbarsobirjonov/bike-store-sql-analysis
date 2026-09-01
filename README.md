@@ -28,7 +28,7 @@ The project contains SQL queries designed to practice technical interview skills
 - ✅ Subqueries
 - ✅ Common Table Expressions (CTE)
 - ✅ Window Functions
-- ⏳ Business Cases
+- ✅ Business Cases
 
 ## Project Structure
 
