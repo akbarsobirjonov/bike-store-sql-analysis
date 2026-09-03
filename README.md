@@ -53,7 +53,7 @@ bike-store-sql-analysis/
 │   ├── 07_window_functions.sql
 │   └── 08_business_cases.sql
 │
-├── powerbi/
+├── PowerBI/
 │   └── bike_store_analysis.pbix
 │
 ├── dashboard_preview.png
