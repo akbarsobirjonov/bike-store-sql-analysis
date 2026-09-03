@@ -14,6 +14,15 @@ The project contains SQL queries designed to practice technical interview skills
 * Translate raw transactional data into actionable business insights
 * Demonstrate practical Data Analyst skills through an end-to-end analytics project
 
+## Key Business Insights
+
+* **Baldwin Bikes** generated **$5.83M**, approximately **68% of total network revenue**.
+* **Trek** led by revenue (**$5.13M**), while **Electra** led by units sold (**2,612 units**).
+* **Mountain Bikes** generated the highest category revenue (**$3.03M**).
+* **Cyclocross Bicycles** had the highest average revenue per product (**$79.9K**).
+* **Pamelia Newman** was the top customer by revenue, generating **$37.8K**.
+* Revenue peaked at **$909.2K in April 2018**, followed by an unusual drop; missing/low data in May–June 2018 should be investigated as a potential **data-quality issue**.
+
 ## Technologies & Tools
 
 - **Database:** PostgreSQL
