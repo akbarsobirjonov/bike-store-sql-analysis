@@ -6,11 +6,13 @@ The project contains SQL queries designed to practice technical interview skills
 
 ## Project Goals
 
-- Practice SQL for Data Analytics and business analysis
-- Develop analytical thinking and SQL problem-solving skills
-- Visualize key business metrics and sales trends in Power BI
-- Progress from fundamental SQL concepts to advanced analytical techniques
-- Build a comprehensive portfolio project for Data Analyst roles
+* Analyze Bike Store sales data using SQL and Power BI
+* Identify key sales trends, top-performing products, brands, categories, and stores
+* Evaluate customer purchasing behavior and revenue performance
+* Apply SQL techniques including joins, subqueries, CTEs, aggregations, and window functions to solve business-oriented analytical tasks
+* Build an interactive Power BI dashboard to visualize sales KPIs and business performance
+* Translate raw transactional data into actionable business insights
+* Demonstrate practical Data Analyst skills through an end-to-end analytics project
 
 ## Technologies & Tools
 
